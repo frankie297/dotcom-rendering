@@ -65,7 +65,6 @@ type InnerProps = {
 const BrazeEpicWithSatisfiedDependencies = ({
 	BrazeComponent,
 	meta,
-	// eslint-disable-next-line @typescript-eslint/no-unused-vars
 	countryCode,
 }: InnerProps) => {
 	const [hasBeenSeen, setNode] = useHasBeenSeen({
@@ -115,7 +114,7 @@ const BrazeEpicWithSatisfiedDependencies = ({
 						subscribeToNewsletter={() => {
 							return Promise.resolve();
 						}}
-						// countryCode={countryCode} // TODO: add countryCode to common props in braze-components
+						countryCode={countryCode}
 					/>
 				</div>
 			</div>
