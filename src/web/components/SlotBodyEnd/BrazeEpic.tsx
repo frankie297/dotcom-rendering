@@ -47,7 +47,7 @@ export const canShow = async (
 			meta: {
 				dataFromBraze: message.extras,
 				logImpressionWithBraze: () => {
-					// message.logImpression();
+					message.logImpression();
 				},
 			},
 		};
