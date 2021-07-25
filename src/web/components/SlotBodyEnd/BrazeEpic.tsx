@@ -79,7 +79,6 @@ const BrazeEpicWithSatisfiedDependencies = ({
 		submitComponentEvent({
 			component: {
 				componentType: COMPONENT_TYPE,
-				// TODO: make ophanComponentId required in the canRender of components
 				id: (meta.dataFromBraze as EpicDataFromBraze).ophanComponentId,
 			},
 			action: 'INSERT',
@@ -94,7 +93,6 @@ const BrazeEpicWithSatisfiedDependencies = ({
 			submitComponentEvent({
 				component: {
 					componentType: COMPONENT_TYPE,
-					// TODO: make ophanComponentId required in the canRender of components
 					id: meta.dataFromBraze.ophanComponentId,
 				},
 				action: 'VIEW',
