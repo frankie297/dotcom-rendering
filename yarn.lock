@@ -1634,14 +1634,15 @@
   resolved "https://registry.yarnpkg.com/@guardian/automat-client/-/automat-client-0.2.17.tgz#253724307312f4d5bc01b5749179193b8a29ae8b"
   integrity sha512-SbNeBjoc1iqt/EZ+zQTy7EbbXbdEHOuKObcseLKWyy/LF+4FQtHNuYxLGQ3zjl6fR7s/nvcnIEBAPrnFv0gcqQ==
 
-"@guardian/braze-components@^2.1.0":
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/@guardian/braze-components/-/braze-components-2.1.0.tgz#d878bf2d7351fd682ee8e5d588970d18a62efd8a"
-  integrity sha512-PofC9Ao2fjUhT9tQcLh5ZFy4n+AwJE2eDNd2UdKM0pnhnfhqLZV+II3wARKuVc8K+4EjDJLnNOY9UA+NbXgE2Q==
+"@guardian/braze-components@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@guardian/braze-components/-/braze-components-3.0.0.tgz#4c8372cec8d23d13c06588985928910729b53598"
+  integrity sha512-u4mq1K5SG2MMDMl2S6RhHJco2R2TLoYx9iMWNF39UngvOvnHA0t3B2PkLZlKPU1xEl7gQKLu4tbAKCJDNvQG1Q==
   dependencies:
     "@guardian/src-button" "3.3.0"
     "@guardian/src-foundations" "3.3.0"
     "@guardian/src-icons" "3.3.0"
+    dialog-polyfill "^0.5.4"
 
 "@guardian/commercial-core@^0.19.2":
   version "0.19.2"
@@ -8484,6 +8485,11 @@ detect-port@^1.3.0:
   dependencies:
     address "^1.0.1"
     debug "^2.6.0"
+
+dialog-polyfill@^0.5.4:
+  version "0.5.6"
+  resolved "https://registry.yarnpkg.com/dialog-polyfill/-/dialog-polyfill-0.5.6.tgz#7507b4c745a82fcee0fa07ce64d835979719599a"
+  integrity sha512-ZbVDJI9uvxPAKze6z146rmfUZjBqNEwcnFTVamQzXH+svluiV7swmVIGr7miwADgfgt1G2JQIytypM9fbyhX4w==
 
 diff-sequences@^24.9.0:
   version "24.9.0"
