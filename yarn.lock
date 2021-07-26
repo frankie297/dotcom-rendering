@@ -1634,10 +1634,10 @@
   resolved "https://registry.yarnpkg.com/@guardian/automat-client/-/automat-client-0.2.17.tgz#253724307312f4d5bc01b5749179193b8a29ae8b"
   integrity sha512-SbNeBjoc1iqt/EZ+zQTy7EbbXbdEHOuKObcseLKWyy/LF+4FQtHNuYxLGQ3zjl6fR7s/nvcnIEBAPrnFv0gcqQ==
 
-"@guardian/braze-components@^3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@guardian/braze-components/-/braze-components-3.0.0.tgz#4c8372cec8d23d13c06588985928910729b53598"
-  integrity sha512-u4mq1K5SG2MMDMl2S6RhHJco2R2TLoYx9iMWNF39UngvOvnHA0t3B2PkLZlKPU1xEl7gQKLu4tbAKCJDNvQG1Q==
+"@guardian/braze-components@^3.0.1":
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/@guardian/braze-components/-/braze-components-3.0.1.tgz#4624b9ff327f283a2a7478b2dfbaf9fc4963269d"
+  integrity sha512-zcACdXim/lhiM10mLcXq+BVmB2N5FyhYf8Y0KxrGGzaQ89VI9HCN4dnsueizgGgbShcKJ/AJjocmul/degwaxA==
   dependencies:
     "@guardian/src-button" "3.3.0"
     "@guardian/src-foundations" "3.3.0"
