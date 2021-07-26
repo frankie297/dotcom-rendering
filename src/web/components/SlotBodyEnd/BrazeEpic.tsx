@@ -109,7 +109,9 @@ const BrazeEpicWithSatisfiedDependencies = ({
 						brazeMessageProps={meta.dataFromBraze}
 						// TODO: Add real implementation for subscribeToNewsletter
 						subscribeToNewsletter={() => {
-							return Promise.resolve();
+							return Math.random() > 0.5
+								? Promise.resolve()
+								: Promise.reject();
 						}}
 						countryCode={countryCode}
 					/>
