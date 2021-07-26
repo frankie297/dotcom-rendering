@@ -3,7 +3,6 @@ import { css } from '@emotion/react';
 
 import type { BrazeMessagesInterface } from '@guardian/braze-components/logic';
 
-import { EpicDataFromBraze } from '@root/src/web/lib/braze/parseBrazeEpicParams';
 import { getBrazeMetaFromUrlFragment } from '@root/src/web/lib/braze/forceBrazeMessage';
 import { CanShowResult } from '@root/src/web/lib/messagePicker';
 import { useOnce } from '@root/src/web/lib/useOnce';
@@ -18,7 +17,7 @@ const wrapperMargins = css`
 const COMPONENT_TYPE = 'RETENTION_EPIC';
 
 type Meta = {
-	dataFromBraze?: EpicDataFromBraze;
+	dataFromBraze?: { [key: string]: string };
 	logImpressionWithBraze: () => void;
 };
 
@@ -79,7 +78,7 @@ const BrazeEpicWithSatisfiedDependencies = ({
 		submitComponentEvent({
 			component: {
 				componentType: COMPONENT_TYPE,
-				id: (meta.dataFromBraze as EpicDataFromBraze).ophanComponentId,
+				id: meta.dataFromBraze?.ophanComponentId,
 			},
 			action: 'INSERT',
 		});
@@ -93,7 +92,7 @@ const BrazeEpicWithSatisfiedDependencies = ({
 			submitComponentEvent({
 				component: {
 					componentType: COMPONENT_TYPE,
-					id: meta.dataFromBraze.ophanComponentId,
+					id: meta.dataFromBraze?.ophanComponentId,
 				},
 				action: 'VIEW',
 			});
