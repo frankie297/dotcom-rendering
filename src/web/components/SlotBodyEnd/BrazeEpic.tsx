@@ -8,7 +8,7 @@ import { CanShowResult } from '@root/src/web/lib/messagePicker';
 import { useOnce } from '@root/src/web/lib/useOnce';
 import { useHasBeenSeen } from '@root/src/web/lib/useHasBeenSeen';
 import { submitComponentEvent } from '@root/src/web/browser/ophan/ophan';
-import type { CommonEndOfArticleComponentProps } from '@guardian/braze-components';
+import type { CommonEndOfArticleComponentProps } from '@guardian/braze-components/end-of-article';
 
 const wrapperMargins = css`
 	margin: 18px 0;
@@ -130,7 +130,7 @@ export const MaybeBrazeEpic = ({ meta, countryCode }: EpicConfig) => {
 
 	useEffect(() => {
 		import(
-			/* webpackChunkName: "guardian-braze-components" */ '@guardian/braze-components'
+			/* webpackChunkName: "guardian-braze-components-end-of-article" */ '@guardian/braze-components/end-of-article'
 		)
 			.then((module) => {
 				setBrazeComponent(() => module.BrazeEndOfArticleComponent);
