@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { css } from '@emotion/react';
 
 import { getZIndex } from '@root/src/web/lib/getZIndex';
-import type { CommonBannerComponentProps } from '@guardian/braze-components';
+import type { CommonBannerComponentProps } from '@guardian/braze-components/banner';
 import { submitComponentEvent } from '@root/src/web/browser/ophan/ophan';
 import type { BrazeMessagesInterface } from '@guardian/braze-components/logic';
 import { getBrazeMetaFromUrlFragment } from '@root/src/web/lib/braze/forceBrazeMessage';
@@ -117,7 +117,7 @@ export const BrazeBanner = ({ meta }: Props) => {
 
 	useEffect(() => {
 		import(
-			/* webpackChunkName: "guardian-braze-components" */ '@guardian/braze-components'
+			/* webpackChunkName: "guardian-braze-components-banner" */ '@guardian/braze-components/banner'
 		)
 			.then((module) => {
 				setBrazeComponent(() => module.BrazeBannerComponent);
