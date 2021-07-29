@@ -103,7 +103,6 @@ const BrazeEpicWithSatisfiedDependencies = ({
 		return (
 			<div ref={setNode} css={wrapperMargins}>
 				<div ref={epicRef}>
-					{/* eslint-disable-next-line react/jsx-props-no-spreading */}
 					<BrazeComponent
 						componentName={meta.dataFromBraze.componentName}
 						brazeMessageProps={meta.dataFromBraze}
